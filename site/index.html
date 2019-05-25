@@ -1,22 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>Hello Coursera!</title>
     </head>
+
     <body>
-        <h1>HyperText Markup Language</h1>
-        <p>Text that contains links to other texts. Hyper media.</p>
-        <p>Markup -- anotation.</p>
-        <p>Language means it has syntax and semantics.</p>
-        <p>html -- structure/ncss -- style/njs -- behavior</p>
-        <p>-Wild West---------XHTML 1.0----WHATWG---------------</p>
-        <p>-----------1997------2000--------2004-------2007-----</p>
-        <p>---------HTML 4.0-----------------------WHATWG & W3C-</p>
-        <p>World Wide Web Consortium</p>
-        <p>Web HyperText Application Technology Group</p>
+        <header>
+            <!--
+            COMPANY LOGO, tag line, some header informantion sometimes
+            navigation:
+            -->
+            <img src="logo.jpeg" width=100 height=100 alt="Company Logo">
+            <nav>
+                Navigation Bar:
+                <h2 id="top">Links to the sections on the same page</h5>
+                <section id="section0">
+                    <ul>
+                        <li><a href="#section1">Block-Element Tags</a></li>
+                        <li><a href="#section2">Lists and Links</a></li>
+                        <li><a href="#section3">HTML and It's History</a></li>
+                        <li><a href="#section4">Content Model</a></li>
+                        <li><a href="#section5">Footer and Images</a></li>
+                        <li><a href="same-directory.html#Painting">The Conquest of Siberia</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+
+        <h1>Central Topic of the rest of the content. Crucial to the SEO</h1>
+
+        <h2>Section I -- Block-Element Tags</h2>
+        <section id="section1">(#section1)
+            <article>
+                Article1
+            </article>
+            <article>
+                Article2
+            </article>
+            <article>
+                Article3
+            </article>
+        </section>
+
+        <h2>Section II -- Lists and Links</h2>
+        <section id="section2">(#section2)
+            <article>
+                <a href="same-directory.html" title="same dir link">
+                    <span>Linking to a file in the same directory</span>
+                </a>
+
+                <a href="same-directory.html" title="same dir link2">
+                    <div>
+                        Lists is used to group related content.
+                    </div>
+                </a>
+
+                <ul>
+                    <li>Binar G4</li>
+                    <li>GA G4</li>
+                    <li>Production
+                        <ol>
+                            <li>Zenith G4</li>
+                            <li>Zenith G2</li>
+                            <li>Zenith G1</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <aside>
+            "Aside" tag means it is not in direct relation to the main
+            content of the page.
+        </aside>
+
+        <h2>Section III -- HTML &amp; it's History</h2>
+        <section id="section3">(#section3)
+
+        <article>
+            <ul>
+                <li>Text that contains links to other texts. Hyper media.</li>
+                <li>Markup -- anotation.</li>
+                <li>Language means it has syntax and semantics.</li>
+            </ul>
+
+            <span>html -- structure/ncss -- style/njs -- behavior</p></span>
+            <p></p>
+            <p>-Wild West---------XHTML 1.0----WHATWG---------------</p>
+            <p>-----------1997------2000--------2004-------2007-----</p>
+            <p>---------HTML 4.0-----------------------WHATWG &amp; W3C-</p>
+            <p></p>
+            <p>World Wide Web Consortium</p>
+            <p>Web HyperText Application Technology Group</p>
+            <p></p>
+            <p>"&lt;p&gt;" -- is an opening tag.</p>
+            <p>"p" is an element. This element stands for paragraph</p>
+            <p></p>
+        </article>
+
+        <h2>Section IV -- &quot;CONTENT MODEL&quot;</h2>
+        <section id="section4">(#section4)
+            <article>
+                Block-Level Elements, Inline Elements&#10; Render on new
+                line vs. render on the same line&#10; May contain b-l el
+                or inline element vs. may contain only other inline
+                elements&#10; roughly Flow content vs. roughly phrasing
+                content&#10;
+            </article>
+
+            <div>Division -- most generic block-level element.</div>
+            <span>Span -- most generic inline element.</span> 
+            <div>
+                <span>Semantic</span> means related to meaning in language or
+                logic.
+            </div>
+
+            <div> Semantic element -- implies some meaning to the content it
+                may help search engine ranking</div>
+
+                <h2><a name="section5">Section V -- Footer and
+                        Images</a></h2>
+
+                <p>
+                    Back to top: <a href="#top">Back to Top</a>
+                </p>
+
         <footer>
+            <div id="Painting">
+            <!--<img src="yermak-s-conquest-of-siberia-1895.jpg" alt="Painting
+                by Vasiliy Surikov">-->
+            </div>
             <hr>
-            <p>Tech support: yeah.right@server-is-down.com</p>
+            <span>
+                <img src="logo.jpeg"
+                     width=50
+                     height=50
+                     alt="Company Logo">
+                     ARGM&nbsp;LLC 2019 &copy; Copyryght.
+            </span>
+            <hr>
+            <p>&lt;Tech support: yeah.right@server-is-down.com&gt;</p>
         </footer>
     </body>
 </html>
