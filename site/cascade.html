@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Coursera!</title>
+        <style>
+            h1 {
+                color: red;
+                font-size:36px;
+                text-align: center;
+            }
+            h2{
+                color: blue;
+                font-size:20px;
+            }
+            h3 {
+                color: blue;
+                font-size:16px;
+            }
+            h1, h2, h3 {
+                font-family: sans;
+            }
+            p {
+                color: blue;
+                font-size: 1rem;
+                width: 400px;
+            }
+            #tech {
+                font-weight: bold;
+                font-style: italic;
+                width: 800px;
+            }
+            .code {
+                color: violet;
+                font-size: 15px;
+                font-family: mono;
+            }
+            .copyleft {
+                display: inline-block; transform: rotate(180deg);
+            }
+            header li {
+                list-style: none;
+            }
+            nav a:link, nav a:visited {
+                font-family: sans;
+                text-decoration: none;
+                border: 1px solid #689d6a;
+                color: #689d6a;
+                display: block;
+                width: 300px;
+                text-align: center;
+                margin-bottom: 1px;
+                opacity: .6;
+            }
+            nav a:hover, nav a:active {
+                font-family: sans;
+                text-decoration: none;
+                border: 1px solid #689d6a;
+                background-color: #689d6a;
+                color: white;
+                display: block;
+                width: 300px;
+                text-align: center;
+                margin-bottom: 1px;
+                opacity: .6;
+            }
+            header li:nth-child(1) {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            header li:nth-child(odd) {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            header li:nth-child(4):hover {
+                width: 300px;
+                background-color: green;
+                cursor: pointer;
+            }
+            #example {
+                font-family:"Palatino Linotype", "Book Antiqua", Palatino,
+                serif;
+                color: #83a598;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 18px;
+                text-transform: capitalize;
+                text-align: left;
+            }
+
+            #styling div:nth-child(3) {
+                font-size: 200%;
+            }
+            #styling div:nth-child(4) {
+                font-size: 2em;
+            }
+            #styling div:nth-child(5) {
+                font-size: 4em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Cascading Style Sheets</h1>
+
+        <header>
+            <a href="index.html">
+                <img src="logo.png" width=100 height=100 alt="Company Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#anatomy">Anatomy of CSS Rule</a></li>
+                    <li><a href="#selectors">Element, Class and id Selectors</a></li>
+                    <li><a href="#combining">Combining Selectors</a></li>
+                    <li><a href="#pseudo">Pseudo-Selectors</a></li>
+                    <li><a href="#inline">Inline Styling</a></li>
+                    <li><a href="#conflict">Conflict Resolution</a></li>
+                    <li><a href="#styling">Text Styling</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="anatomy">
+        <h2>Anatomy of CSS Rule</h2>
+            <p class="code">[element-selector] {<br/>&Tab;&numsp;&numsp;color:
+            blue;<br/>}</p>
+            <p>CSS rule consists of selector and one or more
+            CSS declarations, enclosed in curly braces. CSS declaration
+            contains of property and the value. Collection of CSS rules is
+            a CSS stylesheet.</p>
+        </section>
+
+        <section id="selectors">
+        <h2>Element, Class and id Selectors</h2>
+            <p class="code">.classname {<br/>&Tab;&numsp;&numsp;color:
+            blue;<br/>}</p> <p class="code">#id-name
+            {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+        </section>
+
+        <section id="combining">
+        <h2>Combining Selectors</h2>
+            <p class="code">[element-selector].classname
+            {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+            <p class="code">[selector-parent] > [selector-child]
+               {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+            <p>Child selector combination of selectors -- selects every
+            [selector-child], being direct child of [parent-selector].</p>
+            <p class="code">[selector-parent] [selector-child]
+               {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+            <p>Descendant selector combination of selectors -- applies rule to
+            every [selector-child], being child at any level of descendancy to
+            the [parent-selector].</p>
+            <p class="code">[selector1] + [selector2]
+               {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+            <p>Adjacent sibling selector</p>
+            <p class="code">[selector1] ~ [selector2]
+               {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+            <p>General sibling selector</p>
+        </section>
+
+        <section id="pseudo">
+        <h2>Pseudo-Class Selectors</h2>
+            <p class="code">[selector]:pseudo-class
+            {<br/>&Tab;&numsp;&numsp;color: blue;<br/>}</p>
+        </section>
+
+        <section id="inline">
+            <h2>Inline Styling</h2>
+            <p class="code">&lt;[element] style="text-align: center;"&gt;some
+            content&lt;/p&gt;</p>
+        </section>
+
+        <section id="conflict">
+            <h2>Conflict Resolution</h2>
+            <ul>
+                <li>Origin Precedence</li>
+                <li>Merge</li>
+                <li>Inheritance</li>
+                <li>Specificity</li>
+            </ul>
+
+            <h3>Origin Precedence and Merge</h3>
+            <p>When to declarations are in conflict -- The last declaration
+            wins. When there is no conflict -- Declarations merge.</p>
+
+            <h3>Inheritance</h3>
+            <img src="inheritance.png" width=400 alt="inheritance">
+            <p>All discendents inherit property applied to it's ancestor.</p>
+
+            <h3>Specificity</h3>
+            <img src="specificity.png" width=400 alt="specificity">
+            <p id="example">The most specific selector wins. Every attribute has a
+            specificity score. The most specific selector is an inline styling,
+            which is not realy a selector. It has a score 1000. The next in line is
+            an id selector with the score 100. A class selector has 10 and the
+            least specific is an ordinary element. In case of combination of
+            selectors we just add scores.</p>
+            <p class="code">[element-selector] {<br/>&Tab;&numsp;&numsp;color: blue
+            !important;<br/>}</p>
+            <p>"!important" defines property, overriding any specificity.</p>
+        </section>
+
+        <section id="styling">
+            <h2>Text Styling</h2>
+            <div>regular text</div>
+            <div>200% text</div>
+            <div>2em text</div>
+            <div>4em text</div>
+            <p>Relative sizing has not overriding but cumulative
+            effect.(supposedly)</p>
+        </section>
+
+        <footer>
+            <div>
+                <img src="logo.png"
+                     width=50
+                     height=50
+                     alt="Company Logo">
+                <span>ARGM&nbsp;LLC 2019 <span class="copyleft">&copy;</span>
+                    Copyleft</span>
+            </div>
+            <hr>
+            <p id="tech">&lt;Tech support: yeah.right@server-is-down.com&gt;</p>
+        </footer>
+    </body>
+</html>

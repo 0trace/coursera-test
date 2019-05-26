@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Coursera!</title>
+        <style>
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: lightgray;
+                background-image: url("last-judgement.jpg");
+                background-position: 50% 10%;
+            }
+
+            #box {
+                background-color: #83a598;
+                padding: 10px 10px 10px 10px;
+                border: 5px solid green;
+                margin: 0px;
+                margin: 20px;
+                margin: 40px;
+                width: 500px;
+                height: 250px;
+                box-sizing: content-box;
+                box-sizing: border-box;
+                overflow: visible;
+                overflow: hidden;
+                overflow: scroll;
+                overflow: auto;
+            }
+            #content {
+                background-color: #689d6a;
+                color: white;
+                font-family: mono;
+            }
+
+            h1 {
+                margin-bottom: 30px;
+            }
+
+        </style>
+    </head>
+    
+
+    <body>
+
+        <h1>The Box Model</h1>
+
+        <a href="index.html">
+            <img src="logo.png" width=100 height=100 alt="Company Logo">
+        </a>
+
+        <div id="box">
+            <div id="content">
+                Beside content each box consists of padding, border and
+                margin. Margins don't define real width of element.
+                "width" attribute by default actually sets width of an
+                conten. "box-sizing" attribute lets change this behavior.
+                "border-box" is preferable to use as box-sizing model.
+                It's not inheritable css property. To apply it to all the
+                elements on the page, the "*" selector is
+                used.</br>Vertical margins collapse. Horisontal margins
+                are cumulativie.
+            </div>
+        </div>
+        <div style="color: white; font-family: mono; background-color:
+            rgba(0, 0, 0, 0.5);">
+            Beside content each box consists of padding, border and
+            margin. "width" attribute by default actually sets width
+            of an conten. "box-sizing" attribute lets change this
+            behavior. "border-box" is preferable to use as box-sizing
+            model. It's not inheritable css property. To apply it to
+            all the elements on the page, the "*" selector is
+            used.</br>Vertical margins collapse. Horisontal margins
+            cumulate.
+        </div>
+    </body>
+</html>

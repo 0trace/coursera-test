@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Coursera!</title>
+        <style>
+            #rel {
+                background-color: lightgrey;
+                width: 75px;
+                height: 75px;
+                position: relative;
+                top: 10px;
+                left: 10px;
+            }
+            #origin {
+                background-color: black;
+                width: 75px;
+                height: 75px;
+            }
+            #absorig{
+                background-color: black;
+                width: 300px;
+                height: 200px;
+            }
+
+            #container{
+                background-color: lightgrey;
+                position: relative;
+                width: 300px;
+                height: 200px;
+                top: 10px;
+                left: 10px;
+            }
+
+            #box1 {
+                background-color: red;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+
+            #box2 {
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+    
+
+    <body>
+
+        <h1>Realtive and Absolute Element Positioning.</h1>
+        <p>Allow to specify precise offset of element relative to it's original
+        position.</p>
+
+        <h2>Static Positioning</h2>
+        <p>
+            Another way of saying -- Normanl Document Flow. Default setting for
+            all elements, except "&lt;html&gt;"
+        </p>
+
+        <h2>Relative Positioning</h2>
+        <p>
+            Element is positioned relative to its position in normal document
+            flow.  </br> Offset properties are: top, bottom, left, rigth.
+            </br> Element is not taken out of normal document flow.
+        </p>
+
+        <div id="origin">
+            <section id="rel">
+                Relatively Positioned Element
+            </section>
+        </div>
+
+        <h2>Static Positioning</h2>
+        <p>
+            All offsets (top, bottom, right, left) are relative to the position
+            of the nearest ancestor, which has positioning set on it, other
+            than static. Documents are taken from a normal document flow.
+        </p>
+
+        <div id="absorig">
+            <div id="container">
+                <section id="box1">
+                    1
+                </section>
+                <section id="box2">
+                    2
+                </section>
+            </div>
+        </div>
+
+    </body>
+</html>

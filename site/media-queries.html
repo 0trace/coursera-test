@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Coursera!</title>
+        <style>
+            /* Base Styles */
+            h1 {
+                border: 1px solid black;
+                margin-bottom: 15px;
+            }
+            p {
+                border: 1px solid black;
+                margin-bottom: 15px;
+            }
+            #p1 {
+                background-color: #A52A2A;
+                width: 300px;
+                height: 300px;
+                color: #458588;
+                font-weight: bold;
+                font-family: mono;
+            }
+            #p2 {
+                background-color: #DEB887;
+                width: 120px;
+                height: 120px;
+                color: #458588;
+                font-weight: bold;
+                font-family: mono;
+            }
+/** max-width, min-width, orientation, screen, print **/
+/** @media (max-width: 767px), (min-width: 992px) {...} **/
+
+            /* Large devices only */
+            @media (min-width: 1200px) {
+                #p1 {
+                    width: 80%;
+                }
+                #p2 {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            /** Medium devices only **/
+            @media (min-width: 992px) and (max-width: 1199px) {
+                #p1 {
+                    width: 50%;
+                }
+                #p2 {
+                    width: 180px;
+                    height: 180px;
+                    background-color: grey;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Media Queries</h1>
+        <p id="p1">
+            Be careful not to overlap range boundaris!
+        </p>
+        <p id="p2">
+            Base style css rules should go before any media queries.
+        </p>
+
+    </body>
+</html>
